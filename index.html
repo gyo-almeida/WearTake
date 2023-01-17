@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css"/> 
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>WearTake</title>
+  </head>
+  <body>
     <header>
-        <div class="container_1">
+      <div class="header-container">
         <h1>WEARTAKE</h1>
-        <ul class="categorias">
-            <li>Todos</li>
-            <li>Acessórios</li>
-            <li>Calçados</li>
-            <li>Camisetas</li>
+        <ul class="categories">
+          <li class="Todos">Todos</li>
+          <li class="Acessórios">Acessórios</li>
+          <li class="Calçados">Calçados</li>
+          <li class="Camisetas">Camisetas</li>
         </ul>
-        </div>
+      </div>
     </header>
 
     <main>
-        <div class="container_principal">
-        <section class="vitrine">
-
-            <ul class="lista_vitrine"></ul>
-
+      <div class="main-container">
+        <section class="showcase">
+          <ul class="showcase-list"></ul>
         </section>
 
-        <section class="navegação">
-            <nav>
-                <input class="barra" type="text" name="pesquisa" value="Digite aqui sua pesquisa">
-                <input class="botao" type="button" value="pesquisar">
-            </nav>
-            
-            <h3>Carrinho de compras</h3>
-            <p class="valorTotal">Valor Total :</p>
-            <ul class="carrinho">
-                
+        <section class="nav">
+          <form class="search-form">
+            <input
+              class="search"
+              type="text"
+              name="search"
+              placeholder="Digite aqui sua pesquisa"
+            />
+            <button class="search-submit" type="submit">pesquisar</button>
+          </form>
 
-            </ul>
+          <h3>Carrinho de compras</h3>
+          <p class="totalValue">Valor Total :</p>
+          <ul class="cart"></ul>
         </section>
-    </div>
+      </div>
     </main>
 
-    <script src="./js/database.js"></script>
-    <script src="./js/index.js"></script>
-</body>
+    <script type="module" src="./js/database.js"></script>
+    <script type="module" src="./js/template.js"></script>
+    <script type="module" src="./js/cart.js"></script>
+    <script type="module" src="./js/filter.js"></script>
+    <script type="module" src="./js/search.js"></script>
+  </body>
 </html>
