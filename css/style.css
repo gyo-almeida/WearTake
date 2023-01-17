@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body{
+    overflow-x: scroll;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+}
+
+.container_1{
+    border-bottom: solid #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    width: 100%;
+    height: 50px;
+}
+
+.container_1 h1{
+    font-weight: bold;
+    font-size: 28px;
+    color: #333333;
+}
+
+.categorias{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.categorias li:hover{
+    font-weight: bold;
+}
+
+.container_principal{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao{
+
+    display: block;
+    width: 400px;
+    gap: 30px;
+}
+
+.navegacao nav{
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.barra{
+    background-color: #F5F5F5;
+    margin-top: 15px;
+    border: none;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+}
+
+.botao{
+    background-color: #37268C;
+    color: white;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+}
+
+.carrinho{
+    list-style: none;
+    height: 100%;
+    background-color: #F5F5F5;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+h3{
+    margin-top: 10px;
+    background-color: #37268C;
+    color: white;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.carrinho li{
+    padding: 10px;
+    border-bottom: solid  #3333330f;
+    gap: 5px;
+}
+
+.carrinho p{
+    display: flex;
+    font-size: 15px;
+}
+
+
+.vitrine{
+    max-width: 800px;
+}
+
+.lista_vitrine{
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.lista_vitrine li{
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    display: block;
+    width: 250px;
+    padding: 10px;
+    flex-wrap: nowrap;
+}
+
+.lista_vitrine li:hover{
+    border: solid #37268C;
+}
+
+.categoria{
+    margin-top: 5px;
+    background-color: #2E245E;
+    width: 100px;
+    padding: 7px;
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+
+.titulo{
+    margin-top: 10px;
+    height: 70px;
+    font-style: bold;
+    font-size: 24px;
+    color: #333333;
+}
+
+.descricao{
+    font-size: 16px;
+    color: #828282;
+
+}
+
+.preco{
+    margin-top: 10px;
+    color: #37268C;
+}
+
+.botao_vitrine{
+    margin-top: 10px;
+    justify-content: end;
+    border: none;
+}
+
+.botao_vitrine:hover{
+    border-bottom: solid 2px #2E245E;
+}
+
+/* <img src="./img/jaqueta.svg" alt="jaqueta">
+    <p class="categoria">Camisetas</p>
+    <h2 class="titulo">Lightweight Jacket</h2>
+    <p class="descricao">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
+    <p class="preco">R$100.00</p>
+    <button id="1" class="botao_vitrine">Adicionar ao carrinho</button> */
