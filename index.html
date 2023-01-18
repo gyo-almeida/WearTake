@@ -9,39 +9,44 @@
   </head>
   <body>
     <header>
-      <div class="header-container">
-        <h1>WEARTAKE</h1>
-        <ul class="categories">
-          <li class="Todos">Todos</li>
-          <li class="Acessórios">Acessórios</li>
-          <li class="Calçados">Calçados</li>
-          <li class="Camisetas">Camisetas</li>
-        </ul>
-      </div>
+      <h1>WEARTAKE</h1>
+
+      <section class="menu-mobile">
+        <img src="./img/cart.png" alt="cart icon" class="cart-icon" />
+      </section>
+
+      <ul class="categories">
+        <li class="Todos">Todos</li>
+        <li class="Acessórios">Acessórios</li>
+        <li class="Calçados">Calçados</li>
+        <li class="Camisetas">Camisetas</li>
+      </ul>
     </header>
 
-    <main>
-      <div class="main-container">
-        <section class="showcase">
-          <ul class="showcase-list"></ul>
-        </section>
+    <main class="container">
+      <section class="showcase">
+        <ul class="showcase-list"></ul>
+      </section>
 
-        <section class="nav">
-          <form class="search-form">
-            <input
-              class="search"
-              type="text"
-              name="search"
-              placeholder="Digite aqui sua pesquisa"
-            />
-            <button class="search-submit" type="submit">pesquisar</button>
-          </form>
+      <aside class="nav">
+        <form class="search-form">
+          <input
+            class="search"
+            type="text"
+            name="search"
+            placeholder="Digite aqui sua pesquisa"
+          />
+          <button class="search-submit" type="submit">
+            <img src="./img/lupa.png" alt="search icon" />
+          </button>
+        </form>
 
+        <section class="cart-section">
           <h3>Carrinho de compras</h3>
           <p class="totalValue">Valor Total :</p>
           <ul class="cart"></ul>
         </section>
-      </div>
+      </aside>
     </main>
 
     <script type="module" src="./js/database.js"></script>
@@ -49,5 +54,6 @@
     <script type="module" src="./js/cart.js"></script>
     <script type="module" src="./js/filter.js"></script>
     <script type="module" src="./js/search.js"></script>
+    <script type="module" src="./js/header.js"></script>
   </body>
 </html>
