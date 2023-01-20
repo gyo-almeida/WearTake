@@ -40,20 +40,6 @@ header h1 {
   font-weight: bold;
 }
 
-.cart-icon {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  display: none;
-}
-
-.menu-icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  display: none;
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -98,48 +84,6 @@ form {
   width: 20px;
   height: 20px;
   object-fit: contain;
-}
-
-.cart-section {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.totalValue {
-  font-weight: 600;
-}
-
-.cart {
-  list-style: none;
-  height: 100%;
-  background-color: #f5f5f5;
-  display: block;
-  text-align: center;
-}
-
-h3 {
-  margin-top: 10px;
-  background-color: #37268c;
-  color: white;
-  width: 100%;
-  height: 40px;
-  padding: 5px;
-  border: none;
-  padding-top: 10px;
-  text-align: center;
-  font-size: 16px;
-}
-
-.cart li {
-  padding: 10px;
-  border-bottom: solid #3333330f;
-  gap: 5px;
-}
-
-.cart p {
-  display: flex;
-  font-size: 15px;
 }
 
 .showcase {
@@ -197,6 +141,7 @@ img {
 .description {
   font-size: 16px;
   color: #828282;
+  min-height: 115px;
 }
 
 .value {
@@ -218,19 +163,6 @@ img {
 @media (max-width: 1000px) {
   .container {
     flex-direction: column-reverse;
-  }
-
-  .menu-mobile {
-    display: flex;
-    gap: 14px;
-  }
-
-  .cart-icon {
-    display: block;
-  }
-
-  .cart-section {
-    display: none;
   }
 
   .categories {

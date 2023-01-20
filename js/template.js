@@ -1,5 +1,7 @@
 import data from "./database.js";
 import { cart } from "./cart.js";
+import { cartModal, counter } from "./modal.js";
+
 let list = document.querySelector(".showcase-list");
 
 export function renderTemplate(data, showcase) {
@@ -45,6 +47,11 @@ function createTemplate(product) {
 
   tagButton.addEventListener("click", () => {
     cart(product);
+  });
+
+  tagButton.addEventListener("click", () => {
+    cartModal(product);
+    counter();
   });
 
   return tagLi;

@@ -1,5 +1,6 @@
 let addCart = document.querySelector(".cart");
-let cartList = [];
+
+export let cartList = [];
 
 export function cart(produto) {
   cartList.push(produto);
@@ -18,17 +19,24 @@ function renderCart(array) {
 
 function createCart(product) {
   let tagLi = document.createElement("li");
-  let valorTotal = document.createElement("p");
+  let tagImg = document.createElement("img");
+  let tagDiv = document.createElement("div");
   let tagP = document.createElement("p");
   let tagPreco = document.createElement("p");
   let tagButton = document.createElement("button");
 
+  tagButton.classList.add("remove");
+  tagDiv.classList.add("desc");
+  tagImg.classList.add("img-cart");
+
   tagLi.id = product.id;
+  tagImg.src = product.image;
   tagP.innerHTML = product.nameItem;
   tagPreco.innerHTML = `R$${product.value.toFixed(2)}`;
   tagButton.innerHTML = "remover";
 
-  tagLi.append(tagP, tagPreco, tagButton);
+  tagLi.append(tagImg, tagDiv, tagButton);
+  tagDiv.append(tagP, tagPreco);
 
   tagButton.addEventListener("click", () => {
     tagLi.remove();
@@ -50,5 +58,5 @@ function totalValue() {
 
   let sum = values.reduce((acc, value) => acc + value, initial);
 
-  tagTotalValue.innerHTML = `Valor Total: R$${sum.toFixed(2)}`;
+  return (tagTotalValue.innerHTML = `Valor Total: R$${sum.toFixed(2)}`);
 }
